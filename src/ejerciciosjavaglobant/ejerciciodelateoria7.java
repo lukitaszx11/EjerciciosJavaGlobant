@@ -9,7 +9,7 @@ import java.util.Scanner;
  *
  * @author LUCAS
  */
-public class EjerciciosDeLaTeoria {
+public class ejerciciodelateoria7 {
 
     public static void main(String[] args) {
 Scanner leer = new Scanner(System.in);

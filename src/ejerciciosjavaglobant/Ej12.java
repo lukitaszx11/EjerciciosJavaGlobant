@@ -16,7 +16,7 @@ public class Ej12 {
      */
     public static void main(String[] args) {
         String mensaje;
-        byte cant =0 ; //cantidad correctas
+        byte cant = 0 ; //cantidad correctas
         byte cantx =0 ; //cantidad incorrectas
         Scanner input = new Scanner(System.in);
        do 
@@ -29,9 +29,9 @@ public class Ej12 {
             para que sume la variable de correctas
             */
         {
-            cant= (byte) ( cant +1); //sunmo en 1 la cantidad no entiendo bien lo de byte
+            ++cant; //sunmo en 1 la cantidad no entiendo bien lo de byte
                 }else if (!mensaje.equals("&&&&&")){
-                    cantx = (byte) (cantx+1);
+                    ++cantx;
                 }
         } while (!mensaje.equals("&&&&&")); // el loop sigue hasta q una frase sean 5 "&"
         System.out.println("las frases correctas fueron: "+ cant);
