@@ -21,12 +21,12 @@ public class Ejerciciodelateoria11 {
         do{
                    System.out.println("escriba frases y seran codificadas hasta que escriba: salir");
         Frase = input.nextLine();
-        Codificador(Frase);
+        System.out.println(Codificador(Frase));
         } while (!Frase.equals("salir"));
  
    
     }
-    public static void Codificador(String frase){
+    public static String Codificador(String frase){
         int lenght = frase.length();
         String letra, aux;
         aux = "";
@@ -52,7 +52,8 @@ public class Ejerciciodelateoria11 {
         }
             aux = aux.concat(letra);
         }
-        System.out.println(aux);
+        return aux;
+        
     }
        
 }
